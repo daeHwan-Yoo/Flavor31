@@ -1,4 +1,4 @@
-package com.example.flavor31_main
+package com.example.flavor31
 
 import io.flutter.embedding.android.FlutterActivity
 

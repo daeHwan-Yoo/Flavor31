@@ -1,11 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flavor31_main">
+    package="com.example.flavor31">
    <application
-        android:label="flavor31_main"
+        android:label="flavor31"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
-
-        <!-- 2/4/2023 add meta data -->
         <meta-data android:name="com.google.android.geo.API_KEY"
                android:value="AIzaSyC74wQBHNfrFVNowieNqxnWYZTe2J0Op5Q"/>
         <activity

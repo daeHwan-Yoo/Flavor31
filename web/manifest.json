@@ -1,6 +1,6 @@
 {
-    "name": "flavor31_main",
-    "short_name": "flavor31_main",
+    "name": "flavor31",
+    "short_name": "flavor31",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
