@@ -2,10 +2,12 @@
     package="com.example.flavor31">
    <application
         android:label="flavor31"
-        android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+
+       <!--FEB11: add Android API -->
         <meta-data android:name="com.google.android.geo.API_KEY"
                android:value="AIzaSyC74wQBHNfrFVNowieNqxnWYZTe2J0Op5Q"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

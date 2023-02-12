@@ -39,6 +39,7 @@ dependencies:
   google_maps_flutter_web: ^0.4.0+5
   http: ^0.13.5
   json_serializable: ^6.6.1
+  # FEB11: add for firebase
 
 dev_dependencies:
   flutter_test:
