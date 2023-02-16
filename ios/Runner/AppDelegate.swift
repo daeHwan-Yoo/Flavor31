@@ -12,7 +12,7 @@ import GoogleMaps // FEB11: Add this import googlemap header
     GeneratedPluginRegistrant.register(with: self)
 
     // FEB11: Add for Google Maps API
-    GMSServices.provideAPIKey("AIzaSyC74wQBHNfrFVNowieNqxnWYZTe2J0Op5Q")
+    GMSServices.provideAPIKey("Type-API")
 
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }

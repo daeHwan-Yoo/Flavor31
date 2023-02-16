@@ -13,10 +13,21 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   late GoogleMapController mapController;
 
-  final LatLng _center = const LatLng(45.521563, -122.677433);
-
+  final LatLng _center = const LatLng(37.422131, -122.084801);
+  BitmapDescriptor markerIcon = BitmapDescriptor.defaultMarker;
   void _onMapCreated(GoogleMapController controller) {
     mapController = controller;
+  }
+  void addCustomIcon() {
+    BitmapDescriptor.fromAssetImage(
+        const ImageConfiguration(), "assets/images/location_pin.png")
+        .then(
+          (icon) {
+        setState(() {
+          markerIcon = icon;
+        });
+      },
+    );
   }
 
   @override
@@ -33,7 +44,21 @@ class _MyAppState extends State<MyApp> {
             target: _center,
             zoom: 11.0,
           ),
-          // toDo: add Markers
+          markers: {
+            Marker(
+              markerId: const MarkerId("marker1"),
+              position: const LatLng(37.422131, -122.084801),
+              draggable: true,
+              onDragEnd: (value) {
+                // value is the new position
+              },
+              icon: markerIcon,
+            ),
+            Marker(
+              markerId: const MarkerId("marker2"),
+              position: const LatLng(37.415768808487435, -122.08440050482749),
+            ),
+          },
 
         ),
       ),
